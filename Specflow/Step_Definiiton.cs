@@ -21,7 +21,7 @@ namespace Specflow
         [When(@"I complete the sign up form:")]
         public void WhenICompleteTheSignUpForm(Table table)
         {
-            //CustomerList object can be made into a list, that way we can have list of customers and loop through to be registered
+            //CustomerList object can be made into a list, that way we can have list of customers and loop through to be registered...
             CustomerList = table.CreateInstance<Customer>();
             var homePage = new Home(driver);
             var signUp = new SignUp(driver);
